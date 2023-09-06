@@ -1,6 +1,6 @@
 # AIFlower
 
-![AppIcon]([https://github.com/[MatiasMart]/[AIFlower]/blob/[main]/AppIcon.png?raw=true](https://github.com/MatiasMart/AIFlower/blob/main/AIFlower/AIFlower/Assets.xcassets/AppIcon.appiconset/2.png))
+![AppIcon](https://raw.githubusercontent.com/MatiasMart/AIFlower/main/AIFlower/AIFlower/Assets.xcassets/AppIcon.appiconset/2.png)
 
 Develop this image recognition application using CoreML and Vision Frameworks to create an easy-to-use tool for identifying various flower species.
 The application allows users to capture images of flowers and instantly provides accurate identification of flower species through image analysis.
