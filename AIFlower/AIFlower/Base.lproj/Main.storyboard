@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tjm-Rm-zIm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AIFlower-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AIFlower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-gn-xQU">
+                                <rect key="frame" x="0.0" y="92" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ClN-gn-xQU" secondAttribute="height" multiplier="1:1" id="tVf-fw-Alf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="gpV-Z7-EHR">
+                                <rect key="frame" x="20" y="526" width="374" height="336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.31372549019607843" green="0.27843137254901962" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gpV-Z7-EHR" firstAttribute="top" secondItem="ClN-gn-xQU" secondAttribute="bottom" constant="20" id="5mz-ku-fb4"/>
+                            <constraint firstItem="ClN-gn-xQU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Dt-h9-3jY"/>
+                            <constraint firstItem="gpV-Z7-EHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FHC-AP-GSS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpV-Z7-EHR" secondAttribute="trailing" constant="20" id="NMU-eZ-kiF"/>
+                            <constraint firstItem="gpV-Z7-EHR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gay-Pc-byQ"/>
+                            <constraint firstItem="ClN-gn-xQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kvq-Kh-FyC"/>
+                            <constraint firstItem="ClN-gn-xQU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ov7-qv-H14"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AIFlower" id="5cI-2h-Fi9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Nxd-9o-yl1">
+                            <color key="tintColor" red="0.31372549020000001" green="0.2784313725" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="BYZ-38-t0r" id="qez-md-MIe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="ClN-gn-xQU" id="3sa-al-P6p"/>
+                        <outlet property="wikiText" destination="gpV-Z7-EHR" id="fLM-Dr-shF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.072463768116" y="-28.125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GGK-Ge-mrM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tjm-Rm-zIm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ztl-Gv-TLa">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.90196078431372551" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.31372549020000001" green="0.2784313725" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.31372549020000001" green="0.2784313725" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8UN-8X-OnA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3i-hN-Rw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+</document>
